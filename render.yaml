@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: product-video-maker-server
+    runtime: node
+    rootDir: server
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CLIENT_ORIGIN
+        sync: false
+      - key: NODE_VERSION
+        value: 20
