@@ -4,7 +4,7 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { nanoid } from 'nanoid';
-import { generateCaptions } from '../services/claude.js';
+import { generateCaptions } from '../services/gemini.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const UPLOAD_DIR = path.resolve(__dirname, '../../uploads');

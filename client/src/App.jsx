@@ -80,7 +80,7 @@ export default function App() {
               disabled={loading !== null || files.length === 0}
               className="mt-4 w-full rounded-lg bg-shopee px-4 py-2.5 font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              {loading === 'caption' ? '🤖 Claude đang phân tích...' : '🪄 Tạo nội dung bằng AI'}
+              {loading === 'caption' ? '🤖 Gemini đang phân tích...' : '🪄 Tạo nội dung bằng AI'}
             </button>
           </div>
 
@@ -135,7 +135,7 @@ export default function App() {
       </div>
 
       <footer className="mt-12 text-center text-xs text-slate-500">
-        Powered by Claude Sonnet 4.6 vision · FFmpeg · React · Node.js
+        Powered by Gemini 2.0 Flash vision · FFmpeg · React · Node.js
       </footer>
     </div>
   );
